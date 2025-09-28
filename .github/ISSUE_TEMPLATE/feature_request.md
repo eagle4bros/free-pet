@@ -1,20 +1,45 @@
----
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
-
----
-
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
-
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
-
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+name: Feature Request
+description: Suggest an idea that could improve the project
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > 🙌 Thanks for proposing a feature.
+        > 🐞 For bugs, use the Bug Report template.
+        ---
+        Let's focus on the problem, your idea, and the impact.
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: ex. Add dark mode support for the dashboard
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: What pain point or use case should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How should the feature work?
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who benefits and what improves?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Links, mockups, or related issues
+    validations:
+      required: false

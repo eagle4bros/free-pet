@@ -1,7 +1,8 @@
 name: Bug Report
 description: Create a bug report to help us improve
 body:
-  - type: markdown
+
+- type: markdown
     attributes:
       value: |
         > ⚠️ This form is for reporting bugs only.
@@ -9,7 +10,7 @@ body:
         ---
         Thank you for helping us improve Free Pet!
         To ensure we can address your report efficiently, please fill out all sections in English and provide as much detail as possible.
-  - type: textarea
+- type: textarea
     id: description
     attributes:
       label: Bug Description
@@ -17,7 +18,7 @@ body:
       placeholder: Tell us what you see!
     validations:
       required: true
-  - type: textarea
+- type: textarea
     id: reproduction
     attributes:
       label: To Reproduce
@@ -29,25 +30,25 @@ body:
         4. See error
     validations:
       required: true
-  - type: textarea
+- type: textarea
     id: expected
     attributes:
       label: Expected behavior
       description: A clear and concise description of what you expected to happen
     validations:
       required: true
-  - type: markdown
+- type: markdown
     attributes:
       value: '## Environment'
-  - type: input
+- type: input
     id: os
     attributes:
       label: Operating System
       placeholder: ex. Ubuntu Linux 22.04
     validations:
       required: true
-  - type: input
-    id: free-pet-version
+- type: input
+    id: free_pet_version
     attributes:
       label: Free Pet Version
       placeholder: ex. 0.1
